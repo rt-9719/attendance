@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+.loginButton {
+	text-align: center;
+}
+
+input[type="submit"] {
+	width: 60%;
+    font-size: 15px;
+    color: #fff;
+	display: inline-block;
+    padding: 12px 0px;
+    text-align: center;
+	background-color: #5c87a6;
+    border: 1px solid #5c87a6;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 1s;
+}
+
+/*--hover--*/
+input[type="submit"]:hover {
+    color: #5c87a6;
+    background-color: #ffffff;
+    border: 1px solid #5c87a6;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 1s;
+}

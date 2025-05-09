@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" media="all" th:href="@{/css/loginStyle.css}"/>
+		<title>ログイン</title>
+	</head>
+	<body>
+		<form action="/login" method="post"><!-- 各画面への遷移ボタン用Form -->
+			<table style="margin: auto; padding: 100px;">
+				<tr><td>ユーザーID</td></tr>
+				<tr><td><input type="text"     name="userId"></td></tr>
+				<tr><td>パスワード</td></tr>
+				<tr><td><input type="password" name="password"></td></tr>
+				<tr><td>企業ID</td></tr>
+				<tr><td><input type="text"     name="companyId"></td></tr>
+				<tr><td	class="loginButton"><input type="submit"   name="login" value="ログイン"></td></tr>
+			</table>
+		</form>
+	</body>
+</html>
