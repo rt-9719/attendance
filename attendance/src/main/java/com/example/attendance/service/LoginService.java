@@ -30,5 +30,4 @@ public class LoginService extends AbstractService {
 		
 		return Integer.parseInt(result.get("COUNT").toString());
 	}
-
 }
