@@ -46,6 +46,7 @@ public class LoginController extends AbstractController{
 		if(loginFlg == 1) {
 			mv.setViewName("login/login"); // TODO ログイン後の画面にする
 		} else {
+			mv.addObject("errorMsg","IDとPASSの組み合わせが間違っています。");
 			mv.setViewName("login/login");
 		}
 		

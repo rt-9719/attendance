@@ -28,3 +28,14 @@ input[type="submit"]:hover {
     cursor: pointer;
     transition: background-color 1s;
 }
+
+
+/*エラーメッセージ*/
+.error{
+	padding-top: 70px;
+	display: block;
+	color: red;
+	text-align: center;
+	margin: 10px auto; 
+}
+
