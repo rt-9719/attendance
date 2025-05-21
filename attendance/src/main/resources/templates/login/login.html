@@ -6,8 +6,8 @@
 		<title>ログイン</title>
 	</head>
 	<body>
-		<form action="/login" method="post"><!-- 各画面への遷移ボタン用Form -->
-		<span class="error" th:text="${errorMsg}"></span>
+		<form th:action="@{/login}" method="post">
+			<span class="error" th:text="${errorMsg}"></span>
 			<table style="margin: auto; padding: 15px 100px;">
 				<tr><td>ユーザーID</td></tr>
 				<tr><td><input type="text"     name="userId"></td></tr>

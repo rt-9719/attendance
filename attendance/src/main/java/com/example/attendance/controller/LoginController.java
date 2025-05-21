@@ -44,9 +44,9 @@ public class LoginController extends AbstractController{
 		int loginFlg = loginService.loginCheck(loginForm);
 		
 		if(loginFlg == 1) {
-			mv.setViewName("login/login"); // TODO ログイン後の画面にする
+			mv.setViewName("forward:/top?index"); // TODO ログイン後の画面にする
 		} else {
-			mv.addObject("errorMsg","IDとPASSの組み合わせが間違っています。");
+			mv.addObject("errorMsg", "ユーザーID、パスワード、企業IDのいずれかが間違っています");
 			mv.setViewName("login/login");
 		}
 		
