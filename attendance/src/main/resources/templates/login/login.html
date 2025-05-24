@@ -10,11 +10,11 @@
 			<span class="error" th:text="${errorMsg}"></span>
 			<table style="margin: auto; padding: 15px 100px;">
 				<tr><td>ユーザーID</td></tr>
-				<tr><td><input type="text"     name="userId"></td></tr>
+				<tr><td><input type="text"     name="userId"    required></td></tr>
 				<tr><td>パスワード</td></tr>
-				<tr><td><input type="password" name="password"></td></tr>
+				<tr><td><input type="password" name="password"  required></td></tr>
 				<tr><td>企業ID</td></tr>
-				<tr><td><input type="text"     name="companyId"></td></tr>
+				<tr><td><input type="text"     name="companyId" required></td></tr>
 				<tr><td	class="loginButton"><input type="submit" name="login" value="ログイン"></td></tr>
 			</table>
 		</form>
