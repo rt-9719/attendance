@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" th:href="@{/css/headerStyle.css}">
+    <script th:src="@{/js/header.js}"></script>
+</head>
+
+<header th:fragment="siteHeader" id="sticky-header" class="sticky-header">
+  <div class="sticky-header__container">
+    <div class="sticky-header__logo">
+      <img src="https://placehold.co/200x80?text=Logos" alt="Logo" class="sticky-header__logo-img">
+    </div>
+    <nav class="sticky-header__nav">
+      <ul class="sticky-header__list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+</html>

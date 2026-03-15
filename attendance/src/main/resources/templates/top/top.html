@@ -1,12 +1,23 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-	<head>
+	<head th:fragment="header">
 		<meta charset="UTF-8">
-		<link rel="stylesheet" media="all" th:href="@{/css/loginStyle.css}"/>
+		<link rel="stylesheet" media="all" th:href="@{/css/topStyle.css}"/>
+		<link rel="stylesheet" th:href="@{/css/headerStyle.css}">
 		<title>トップメニュー</title>
 	</head>
 	<body>
+		<!--<div th:include="/header/header"></div>-->
+		<div th:replace="header/header :: siteHeader"></div>
+		<br><br><br><br>
 		<form th:action="@{/top}" method="post">
+			<table style="margin: auto; padding: 15px 100px;">
+				<tr>
+					<td	class="topButton"><input type="submit" name="workPatternList" value="勤務パターン"></td>
+					<td	class="topButton"><input type="submit" name="aaa" value="ログイン"></td>
+				</tr>
+			</table>
 		</form>
+		
 	</body>
 </html>
